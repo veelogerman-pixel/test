@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced User Info Gatherer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p>Please grant us permission to access your webcam and location for a personalized experience.</p>
+
+        <div id="camera-container">
+            <video id="video" autoplay playsinline></video>
+            <canvas id="canvas"></canvas>
+            <p id="no-camera-message" style="display: none;">No webcam detected or permission denied.</p>
+        </div>
+
+        <button id="startButton">Start Session</button>
+        <button id="captureButton" style="display: none;">Capture & Send Data</button>
+
+        <div id="location-info" style="display: none;">
+            <h2>Your Location:</h2>
+            <p id="coords"></p>
+            <p id="address"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
